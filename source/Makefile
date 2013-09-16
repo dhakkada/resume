@@ -10,3 +10,5 @@ clean:
 clobber: clean
 	-rm *.pdf
 
+cv:
+	xelatex -pdf cv.tex

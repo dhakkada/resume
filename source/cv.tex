@@ -1,0 +1,250 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Two Column One Page Curriculum Vitae
+% LaTeX Template
+% Version 1.1 (24/1/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro (The CV Inn)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size - 10pt, 11pt or 12pt
+
+\usepackage[hmargin=1.25cm, vmargin=1.5cm]{geometry} % Document margins
+
+\usepackage{marvosym} % Required for symbols in the colored box
+\usepackage{ifsym} % Required for symbols in the colored box
+
+\usepackage[usenames,dvipsnames]{xcolor} % Allows the definition of hex colors
+
+% Fonts and tweaks for XeLaTeX
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[Mapping=tex-text]{Times New Roman} % Main document font
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Times New Roman} % Font for your name at the top
+%\setmonofont[Scale=MatchLowercase]{Andale Mono}
+%\setromanfont[Ligatures=TeX]{TeX Gyre Pagella}
+%\setsansfont[Ligatures=TeX,Scale=MatchLowercase]{TeX Gyre Heros}
+%\setmonofont[Scale=MatchLowercase]{Inconsolata}
+% Colors for links, text and headings
+\usepackage{hyperref}
+\definecolor{linkcolor}{HTML}{506266} % Blue-gray color for links
+%$ \definecolor{shade}{HTML}{F5DD9D} % Peach color for the contact information box
+\definecolor{shade}{HTML}{FFEBE0} % Peach color for the contact information box
+%%\definecolor{shade}{HTML}{F5E0EB} % Peach color for the contact information box
+\definecolor{text1}{HTML}{2b2b2b} % Main document font color, off-black
+\definecolor{headings}{HTML}{701112} % Dark red color for headings
+% Other color palettes: shade=B9D7D9 and linkcolor=A40000; shade=D4D7FE and linkcolor=FF0080
+
+\hypersetup{colorlinks,breaklinks, urlcolor=linkcolor, linkcolor=linkcolor} % Set up links and colors
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example footer:
+%\rfoot{\color{headings} {\sffamily Last update: \today}. Typeset with Xe\LaTeX}
+
+\renewcommand{\headrulewidth}{0pt} % Get rid of the default rule in the header
+
+\usepackage{titlesec} % Allows creating custom \section's
+
+% Format of the section titles
+\titleformat{\section}{\color{headings}
+\scshape\Large\raggedright}{}{0em}{}[\color{black}\titlerule]
+
+\titlespacing{\section}{0pt}{0pt}{5pt} % Spacing around titles
+
+\begin{document}
+
+\color{text1} % Sets the default text color for the whole document to the color defined as 'text1'
+
+\par{\centering{\sffamily\Huge Dhara Sheth}\\ % Your name
+{\color{headings}\fontspec[Variant = 2]{Times New Roman} 
+\textit{Empathetic, Reliable, Attentive, Eager to help}
+ \\[15pt]\par} % Curriculum vitae text in the Zapfino font
+	
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} % Start the left-hand side of the page
+\vspace{0pt} % Trick for alignment
+	
+\section{Work Experience} 
+
+{\raggedleft\textsc{April 2013 -- August 2013}\par}
+
+{\raggedright\large Graduate Counseling Practicum Training\\
+\textit{PSU Community Counseling Clinic}\\[5pt]}
+
+\normalsize{
+Worked with problems such as anxiety, depression, trauma, self-image, divorce, and co-parenting; using techniques such as CBT, emotion focus therapy, mindfulness and DBT, and basic counseling skills.
+}\\
+
+{\raggedleft\textsc{August 2013 to present}\par}
+
+{\raggedright\large School Counseling Intern\\
+\textit{Beaverton School District}\\[5pt]}
+
+\normalsize{
+Counseling K-5 grade students at Cedar Mill Elementary School and West Tualatin View Elementary School through small group sessions, guidance curriculum and individual counseling. 
+}\\
+
+{\raggedleft\textsc{September 2013 to present}\par}
+
+{\raggedright\large Graduate Mentor for General Ed. Sophomore level \\
+\textit{University Studies, PSU}\\[5pt]}
+
+\normalsize{
+Teaching, assisting students with research and writing process, group facilitation, community building and working on student retention. Working with about 36 students each term.
+}\\
+
+{\raggedleft\textsc{July 2012 to present}\par}
+{\raggedright\large International Student Peer Mentor\\
+\textit{Portland State University}\\[5pt]}
+
+\normalsize{
+Mentoring a small group (8) of international students during their initial term, helping them in acculturation process, and providing them with guidance.
+}\\
+
+%{\raggedleft\textsc{October 2011 to August 2012}\par}
+
+%{\raggedright\large Student Teacher\\
+%\textit{Helen Gordon Child Development Center}\\[5pt]}
+
+%\normalsize{
+%Working in infant toddler section, assisting in physical, emotional and social needs of children with an emphasis on Reggio Emilia approach.
+%}\\
+
+{\raggedleft\textsc{October 2011 to March 2012}\par}
+
+{\raggedright\large Student Teacher\\
+\textit{Beverly Cleary - Portland Public School}\\[5pt]}
+
+\normalsize{
+As a part of effective teaching and classroom management, taught a class of 30 students in grade IV in topics including math, social sciences and team building.
+}\\
+
+{\raggedleft\textsc{January 2009 to April 2011}\par}
+
+{\raggedright\large High School Educator\\
+\textit{Eklavya School, Ahmedabad}\\[5pt]}
+
+\normalsize{
+Taught Psychology in high school, History\&Geography in middle school, and was responsible for guiding students in psychology related research. Was part of several committees such
+as group counseling, organizing events, seminars \& competitions, leading field visits, survey and nature camps within the school.
+}\\
+
+%{\raggedleft\textsc{May 2008 to December 2008}\par}
+
+%{\raggedright\large Trainee Psychologist\\
+%\textit{Tangram, Ahmedabad}\\[5pt]}
+
+%\normalsize{
+%Conducted seminars and work shops on effective study habits, time management and stress management. 
+%}\\
+
+%{\raggedleft\textsc{January 2008 to March 2008}\par}
+
+%{\raggedright\large School Counselor Intern\\
+%\textit{Bhartiya Vidya Bhavans School, Baroda, India}\\[5pt]}
+
+%\normalsize{
+%Play therapy for elementary school children. Organized group seminars with elementary and highschool children on team building and life skills.
+%}\\
+
+%{\raggedleft\textsc{December 2006 to November 2007}\par}
+
+%{\raggedright\large Counseling Clinic Intern\\
+%\textit{Dept. Psychology, MS University, India}\\[5pt]}
+
+%\normalsize{
+%Counseling and psychological testing for clients.
+%}\\
+
+
+
+
+\end{minipage} % End the left-hand side of the page
+\hfill
+\begin{minipage}[t]{0.44\textwidth} % Start the right-hand side of the page
+\vspace{0pt} % Trick for alignment
+
+%----------------------------------------------------------------------------------------
+%	COLORED BOX
+%----------------------------------------------------------------------------------------
+
+\colorbox{shade}{\textcolor{text1}{
+\begin{tabular}{c|p{7cm}}
+\raisebox{-4pt}{\textifsymbol{18}} & \#511, 1717 SW Park Ave, Portland, OR 97201 \\ % Address
+\raisebox{-3pt}{\Mobilefone} & +1 404 913 4272 \\ % Phone number
+\raisebox{-1pt}{\Letter} & \href{mailto:dhara@sheth.net.in}{dhara@sheth.net.in} \\ % Email address
+\Keyboard & \href{http://dhara.sheth.net.in}{http://dhara.sheth.net.in} \\ % Website
+\end{tabular}
+}
+}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+
+\section{Education} 
+
+\begin{tabular}{rl} % Start a table with two columns, one for dates and one for qualifications
+
+2011 -- \textsc{Present} & \textbf{Master of Science} \\ 
+& \textsc{School Counseling} \\ 
+& \textit{Portland State University}\\
+&\\
+	 
+2008 & \textbf{Master of Arts} \\ 
+& \textsc{Counseling Psychology} \\ 
+& \textit{Maharaja Sayajirao University, India}\\
+&\\
+	 
+2006 & \textbf{Bachelor of Arts}\\
+& \textsc{Psychology} \\
+& \textit{Gujarat University, India}\\
+&\\
+	 
+\end{tabular}\\[10pt]
+
+\section{Certifications} 
+$\triangleright$ \textit{ASIST} Applied Suicide Intervention Skills Training \\
+\\
+$\triangleright$ \textit{CGCP} Model Comprehensive Guidance and Counseling Program for middle school as per ASCA guidelines \\
+\\
+$\triangleright$ \textit{Transition to Middle School} Program for 5th grade students and parents \\
+\\
+$\triangleright$ \textit{Hatha Yoga} at M.S University\\
+
+\section{Awards} 
+
+$\triangleright$ \textit{Best Educator in High School} for 2009-2010 \\
+\textit{Eklavya School, Ahmedabad}\\
+
+\section{Volunteer Work} 
+$\triangleright$ Oregon Food Bank volunteer with Khiwanis club \\
+\\
+$\triangleright$ Immigrant \& Refugee Community Organization - in-home tutor \\
+\\
+$\triangleright$ World Mental Health Week - Creating awareness, volunteer \\
+\\
+$\triangleright$ National Social Service - India, Representative from St. Xavier's College, Gujarat for 3 years \\
+\\
+$\triangleright$ SAWERA - Promoting awareness about domestic violence, and fund raising for the organizational activities\\
+
+\end{minipage} % End right-hand side of the page
+
+\end{document}  
