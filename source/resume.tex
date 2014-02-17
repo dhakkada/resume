@@ -15,20 +15,23 @@
 
 % character encoding
 \usepackage[utf8]{inputenc}
+\usepackage[]{marvosym}
 
 % adjust the page margins
 \usepackage[scale=0.84]{geometry}
-\setlength{\hintscolumnwidth}{2.5cm}						% if you want to change the width of the column with the dates
+\setlength{\hintscolumnwidth}{2.5cm}    					% if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
 \AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
-
+%\renewcommand\ignore[1]{}
 % personal data
 \firstname{Dhara}
 \familyname{Sheth}
 % optional, remove the line if not wanted
 \address{1717 SW Park Ave, Apt 511 Portland Oregon}{97201} 
 % optional, remove the line if not wanted
-\mobile{404-913-4272}                    % optional, remove the line if not wanted
+%\mobile{404-913-4272}
+\mobile{503-964-9406}
+
 \email{dhara@sheth.net.in}                      % optional, remove the line if not wanted
 %\extrainfo{additional information (optional)} % optional, remove the line if not wanted
 
@@ -41,7 +44,9 @@
 \maketitle
 
 \section{Objective}
-\cventry{}{To secure a full time School Counseling position. My aim is to work with diverse student populations}{}{}{}{}
+\cventry{}{To secure a full time School Counseling position
+%\ignore{My aim is to work with diverse student populations}
+}{}{}{}{}
 
 \section{Profile}
 \cvlistitem[$\triangleright$]{Self directed and highly motivated with an eagerness to help others in need.}
@@ -58,23 +63,30 @@
 \cventry{06.2003--04.2006}{B.A}{Psychology}{Gujarat University - India}{}{}  % arguments 3 to 6 are optional
 
 \section{Certified Courses \& Projects}
+\cvlistitem[\emph{MI}] {- Motivational Interviewing in Schools}
 \cvlistitem[\emph{ASIST}] {- Applied Suicide Intervention Skills Training}
 \cvlistitem[\emph{CGCP}] {- Model Comprehensive Guidance and Counseling Program for middle school as per ASCA guidelines}
 \cvlistitem[\emph{Transition to Middle School}] {-  Program for 5th grade students and parents}
-\cvlistitem[\emph{Basic Counseling Skills}] {Workshop at Tangram}
-\cvlistitem[\emph{Hatha Yoga}] {at M.S University}
+%\cvlistitem[\emph{Basic Counseling Skills}] {Workshop at Tangram}
+\cvlistitem[\emph{Yoga Training}] {at M.S University}
 
 \section{Experience}
-\cventry{04.2013--08.2013}{Graduate Counseling Practicum Training}{PSU Community Counseling Clinic}{
-As part of my practicum training, we provided counseling services once a week (43 direct client hours) for Portland community members. During this training, I worked with problems such as anxiety, depression, trauma, self-image, divorce, and co-parenting, using techniques such as CBT, emotion focused therapy, mindfulness and DBT, and basic counseling skills. My returning clients included five individuals and a couple}{}{}
-\cventry{08.2013--present}{School Counseling Intern}{Beaverton School District}{
-Intern at Cedar Park Middle School, Cedar Mill Elementary School, and West Tualatin View Elementary school}{This is a counseling intern position working with K-8 students that involves individual counseling, group counseling and guidance counseling delivered in the classrooms}{}
+\cventry{08.2013--present}{School Counseling Intern, Academic year 2013-2014}{Beaverton School District}{
+Served as a counseling intern (23hrs per week) at Cedar Mill Elementary (K-5) and Cedar Park Middle (6-8) schools. It was student-focused work at different levels including: school-wide interventions for issues such as bullying, diversity inclusion, PBIS, and transitions between schools; classroom guidance lessons, group interventions for issues such as powerful voices for latina students; career awareness and career workshops; friendship and social skills; peer and relational conflict; as well as several different Individual interventions; classroom observation. This position required collaboration and consultation with school counselors, teachers, parents, community liaison and administrators}{}{}
+
+%
+%Intern at Cedar Park Middle School, Cedar Mill Elementary School, and West Tualatin View Elementary school}{This is a counseling intern position working with K-8 students that involves individual counseling, group counseling and guidance counseling delivered in the classrooms
+%This counseling intern position served the students in all areas of development: academic, career, and personal/social. met all the Teacher Standards and Practices Commission (TSPC) competencies.   
+%Both of the school sites supports Comprehensive School counseling Program based on American School Counselor Association (ASCA) standards and Oregon’s Comprehensive Guidance and Counseling Framework.
 
 \cventry{09.2012--present}{Graduate Mentor for General Ed. Sophomore level classes}{University Studies, Portland State University}{
 As a graduate mentor, I was tasked with conducting sessions of 12 students each for a class of 36 students.My duties included teaching, assisting students in research and writing process, group facilitation, community building, connecting students with appropriate resources and working on student retention}{}{}
+\cventry{04.2013--08.2013}{Graduate Counseling Practicum Training}{PSU Community Counseling Clinic}{
+As part of my practicum training, we provided counseling services once a week (43 direct client hours) for Portland community members. During this training, I worked with problems such as anxiety, depression, trauma, self-image, divorce, and co-parenting, using techniques such as CBT, emotion focused therapy, mindfulness and DBT, and basic counseling skills. My returning clients included five individuals and a couple}{}{}
 % This is a scholarship position within the University Studies Department. As a peer mentor I planned lessons and led bi-weekly mentor sessions for groups of freshman level students. I also collaborated with PSU faculty and UNST staff to fulfill the university’s core requirements. My primary role was to help my students acclimate to the unique college culture of PSU. 
 \cventry{07.2012-present}{International Student Peer Mentor }{Portland State University}{
 This position included mentoring 8 to 9 international students during their initial term. As student peer mentors, we served as bridges for the international students from their parent culture to that of Portland State University, and United States as a whole. My duties included cultural advising and peer support for any problems they face}{}{}
+%\newpage
 \cventry{10.2011--08.2012}{Student Teacher}{Helen Gordon Child Development Center, Portland} {
 Working in infant toddler section assisting physical emotional and social needs of children, with an emphasis on Reggio Emilia approach}{}{}
 \cventry{10.2011--03.2012}{Student Teacher}{Beverly Cleary , Portland Public School, Portland}{
@@ -115,3 +127,4 @@ As a school counselor intern, my duties included play therapy for elementary sch
 
 
 %% end of file `template_en.tex'.
+
