@@ -8,4 +8,4 @@ cv:
 	cd build; make cv
 
 clean:
-	rm -rf build
+	rm -rf source/*.pdf
