@@ -145,7 +145,7 @@
       %\ifthenelse{\isundefined{\@phone}}{}{\footersymbol\phonesymbol~\@phone\@firstfooterelementfalse}%
       %\ifthenelse{\isundefined{\@fax}}{}{\footersymbol\faxsymbol~\@fax\@firstfooterelementfalse}%
       \ifthenelse{\isundefined{\@email}}{}{\footersymbol\emailsymbol~\emaillink{\@email}\@firstfooterelementfalse}%
-      \ifthenelse{\isundefined{\@extrainfo}}{}{\footersymbol\@extrainfo\@firstfooterelementfalse}}}%
+      \ifthenelse{\isundefined{\@extrainfo}}{}{\footersymbol\ding{43} \@extrainfo\@firstfooterelementfalse}}}%
   }%
   \pagestyle{plain}}
 \AtBeginDocument{\makefooter}

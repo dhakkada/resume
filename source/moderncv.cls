@@ -105,6 +105,7 @@
 
 % symbols like \Telefon, \Mobilefone, \Letter and \Email
 \RequirePackage{marvosym}
+\RequirePackage{pifont}
 
 % extended characters of T1 in .ps + other guillemets
 %\RequirePackage{ae,aecompl,aeguill}
