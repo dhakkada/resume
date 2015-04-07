@@ -136,19 +136,19 @@
     \fancyfoot[c]{%
       \parbox{0.8\textwidth}{%
       \centering%
-      \addressfont\color{addresscolor}%
-      \ifthenelse{\isundefined{\@addressstreet}}{}{%
-        \addresssymbol~\@addressstreet%
-        \@firstfooterelementfalse%
-        \ifthenelse{\isundefined{\@addresscity}}{}{~--~\@addresscity}\\\@firstfooterelementtrue}%
+      %\addressfont\color{addresscolor}%
+      %\ifthenelse{\isundefined{\@addressstreet}}{}{%
+      %  \addresssymbol~\@addressstreet%
+      %  \@firstfooterelementfalse%
+      %  \ifthenelse{\isundefined{\@addresscity}}{}{~--~\@addresscity}\\\@firstfooterelementtrue}%
       \ifthenelse{\isundefined{\@mobile}}{}{\footersymbol\mobilesymbol~\@mobile\@firstfooterelementfalse}%
-      \ifthenelse{\isundefined{\@phone}}{}{\footersymbol\phonesymbol~\@phone\@firstfooterelementfalse}%
-      \ifthenelse{\isundefined{\@fax}}{}{\footersymbol\faxsymbol~\@fax\@firstfooterelementfalse}%
-      %\ifthenelse{\isundefined{\@email}}{}{\footersymbol\emailsymbol~\emaillink{\@email}\@firstfooterelementfalse}%
+      %\ifthenelse{\isundefined{\@phone}}{}{\footersymbol\phonesymbol~\@phone\@firstfooterelementfalse}%
+      %\ifthenelse{\isundefined{\@fax}}{}{\footersymbol\faxsymbol~\@fax\@firstfooterelementfalse}%
+      \ifthenelse{\isundefined{\@email}}{}{\footersymbol\emailsymbol~\emaillink{\@email}\@firstfooterelementfalse}%
       \ifthenelse{\isundefined{\@extrainfo}}{}{\footersymbol\@extrainfo\@firstfooterelementfalse}}}%
   }%
   \pagestyle{plain}}
-%\AtBeginDocument{\makefooter}
+\AtBeginDocument{\makefooter}
 
 
 \endinput
