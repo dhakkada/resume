@@ -1,14 +1,7 @@
-all: resume.pdf
-	$(MAKE) clean
-
-%.pdf : %.tex cvthemecustom.sty
-	pdflatex $*
+resume.pdf:
+	pdflatex resume.tex
 
 clean:
-	-rm *.log *.aux *.out
+	rm *.pdf *.log *.aux *.out
 
-clobber: clean
-	-rm *.pdf
 
-cv:
-	xelatex -pdf cv.tex

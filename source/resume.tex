@@ -1,52 +1,66 @@
-\documentclass[11pt,a4paper]{moderncv}
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%% Copyright 2010-2011 Mark Liu (markwayneliu@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\usepackage{verbatim}
 
 % moderncv themes
-% optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
-\cvtheme[green]{custom}
+\moderncvstyle{dhara}
+\moderncvcolor{dhara}
+
+\renewcommand*{\namefont}{\fontsize{20}{20}\mdseries\upshape}
 
 % character encoding
-\usepackage[utf8]{inputenc}
-\usepackage[]{marvosym}
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
 
 % adjust the page margins
 \usepackage[scale=0.84]{geometry}
-\setlength{\hintscolumnwidth}{2.5cm}    					% if you want to change the width of the column with the dates
+\setlength{\hintscolumnwidth}{2.8cm}						% if you want to change the width of the column with the dates
 %\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
-\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
-%\renewcommand\ignore[1]{}
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+
 % personal data
 \firstname{Dhara}
 \familyname{Sheth}
-% optional, remove the line if not wanted
-\address{1717 SW Park Ave, Apt 619 Portland Oregon}{97201} 
-% optional, remove the line if not wanted
-%\mobile{404-913-4272}
-\mobile{503-964-9406}
+%\address{(omitted for web)}{(omitted for web)}    % optional, remove the line if not wanted
+\mobile{(503) 964-9406}                    % optional, remove the line if not wanted
+\email{dhara@sheth.net.in}                      % optional, remove the line if not wanted
+\homepage{http://dhara.sheth.net.in}                % optional, remove the line if not wanted
+%\extrainfo{\url{http://markliu.me}} % optional, remove the line if not wanted
 
-\email{dhara@sheth.net.in}    
-%\homepage{shethdhara.weebly.com}
- % optional, remove the line if not wanted
-%\extrainfo{additional information (optional)} % optional, remove the line if not wanted
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
 
 %\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
-
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
 \begin{document}
 \maketitle
-
+\vspace{-5ex}
 \section{License}
-\cventry{}{Initial I School Counselor License with K-12 counseling endorsement from Teacher Standards and Practices Commission (TSPC) Oregon}{}{}{}{}{}
-
+\cventry{}{Initial I School Counselor License with K-12 counseling endorsement from Teacher Standards and Practices Commission      (TSPC) Oregon}{}{}{}{}{}
 
 \section{Education}
 \cventry{09.2011--06.2014}{M.S}{School Counseling}{Portland State University - Oregon}{GPA 3.94}{}
 \cventry{06.2006--04.2008}{M.A}{Counseling Psychology}{Maharaja Sayajirao University} {Baroda, India}{}{}{}
 \cventry{06.2003--04.2006}{B.A}{Psychology}{Gujarat University - India}{}{}  % arguments 3 to 6 are optional
 
-\section{Counseling Experience}
+\section{Experience}
 \smallskip
+\cventry{08.2014--04.2015}{Professional School Counselor}{Richmond and Washington Elementary Schools, Salem Keizer School District}{}{}{}
+\cvlistitem{Provided social, emotional, academic and career counseling for students from two \textbf{Title I} schools (Schools with more than 70\% of students      below poverty line), and connecting families with community resources}
+\cvlistitem{The social background included single parent households, migrant and unstable families, including families with members in jail}
+
 \cventry{04.2013--03.2014}{Clinical Mental Health Experience}{PSU Community Counseling Clinic}{}{}{}
 \cvlistitem{Counseling and case management for anxiety, depression, trauma, self-image, divorce, self-care plan and co-parenting}
 \cvlistitem{Techniques: Cognitive
@@ -70,23 +84,26 @@ Behavioral Technique (CBT), Emotion Focused Therapy (EFT), Mindfulness, Motivati
 \cvlistitem{Taught History in grade 9 (one year)}
 
 \section{Multilingual}
-\cvlistitem[]{Fluent: English, Hindi, Gujarati}
+\cventry{}{Fluent:}{English, Hindi, Gujarati}{}{}{}{}
 
 \section{Community \& Volunteer Work}
 \smallskip
-\cvlistitem[\emph{Oregon Food Bank} (Volunteer)] {with Khiwanis club} 
-\cvlistitem[\emph {IRCO}] {Immigrant and Refugee Community Organization - in home tutor}
-\cvlistitem[\emph{World Mental Health Week}]{Creating awareness about mental health}
+\cventry{}{Oregon Food Bank}{(Volunteer) with Khiwanis club}{}{}{}{}
+\cventry{}{IRCO}{Immigrant and Refugee Community Organization - in home tutor}{}{}{}{}
+\cventry{}{World Mental Health Week}{Creating awareness about mental health}{}{}{}{}
+\cventry{}{National Social Service, India}{Representative from St. Xavier’s College, Gujarat, for three years}{}{}{}{}
+\cventry{}{Youth Hostel Association, India}{Camp leader, Ahmedabad main unit.}{}{}{}{}
+
 
 \section{Certified Courses \& Projects}
 \smallskip
-\cvlistitem[\emph{MI}] {- Motivational Interviewing in Schools}
-\cvlistitem[\emph{ASIST}] {- Applied Suicide Intervention Skills Training}
-\cvlistitem[\emph{CGCP}] {- Model Comprehensive Guidance \& Counseling Program for middle school \\
-as per ASCA guidelines}
+\cventry{}{MI}{Motivational Interviewing in Schools}{}{}{}{}
+\cventry{}{ASSIST}{Applied Suicide Intervention Skills Training}{}{}{}{}
+\cventry{}{CampVictory}{Training surrounding issues of child sexual abuse}{}{}{}{}
+\cventry{}{CGCP}{Model Comprehensive Guidance \& Counseling Program for middle school as per ASCA guidelines }{}{}{}{}
 
 %\cvlistitem[\emph{Basic Counseling Skills}] {Workshop at Tangram}
-\cvlistitem[\emph{Yoga Training}] {at MS University}
+\cventry{}{Yoga Training}{at MS University}{}{}{}{}
 
 \section{Student Teaching Experience}
 \smallskip
@@ -114,16 +131,4 @@ tion}
 \cventry{07.2012-12.2013}{International Student Peer Mentor}{Portland State University} {}{}{}
 \cvlistitem{Mentoring international students during their initial school term for smooth transition in
 United States}
-
-%\pagebreak
-
-
-%\section{Address}
-%\cvlistitem[] {3854 SE Yamhill St.\\
-%Portland, OR\\
-%Zip: 97214}
 \end{document}
-
-
-%% end of file `template_en.tex'.
-

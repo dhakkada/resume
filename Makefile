@@ -1,6 +1,6 @@
 resume:
 	#rm -rf build; cp -r source build
-	cd source; rm resume.pdf
+	- cd source; rm resume.pdf
 	cd source; make resume.pdf
 
 cv:
