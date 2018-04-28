@@ -1,22 +1,36 @@
 \documentclass[11pt,a4paper,sans]{moderncv}
 \usepackage{verbatim}
+\usepackage{footmisc}
+\usepackage[all]{background}
+\backgroundsetup{contents=A,color=color1}
+%\SetBgContents{\url{http://tex.stackexchange.com/}}% Set contents
+\SetBgPosition{-2.0cm,-10.0cm}% Select location
+\SetBgOpacity{0.5}% Select opacity
+\SetBgAngle{90.0}% Select rotation of logo
+\SetBgScale{0.7}% Select scale factor of logo
+
 % moderncv themes
 \moderncvstyle{dhara}
 \moderncvcolor{dhara}
 \renewcommand*{\namefont}{\fontsize{20}{20}\mdseries\upshape}
 \usepackage[utf8]{inputenc}                   % replace by the encoding you are using
 % adjust the page margins
-\usepackage[scale=0.84]{geometry}
+\usepackage[scale=0.85]{geometry}
 \setlength{\hintscolumnwidth}{2.8cm}						% if you want to change the width of the column with the dates
 % personal data
 \firstname{Dhara}
 \familyname{Sheth}
-%\address{(omitted for web)}{(omitted for web)}    % optional, remove the line if not wanted
+\address{Martin-Luther Stra{\ss}e 1, Saarbr\"ucken, 66111\\ }{}    % optional, remove the line if not wanted
 \mobile{+49 (1590) 1995148}                    % optional, remove the line if not wanted
 \email{dhara@sheth.net.in}                      % optional, remove the line if not wanted
 \homepage{dhara.sheth.net.in}                % optional, remove the line if not wanted
-%\extrainfo{\url{http://markliu.me}} % optional, remove the line if not wanted
+%\address{street and number}{postcode city}
+\makeatletter
+\def\blfootnote{\gdef\@thefnmark{}\@footnotetext}
+\makeatother
 
+%\extrainfo{\url{http://markliu.me}} % optional, remove the line if not wanted
+%\social[linkedin]{john.doe}
 % to show numerical labels in the bibliography; only useful if you make citations in your resume
 %\makeatletter
 %\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
@@ -48,128 +62,138 @@
 %\cvlistitem{Exceptional understanding of problems faced by cultural minorities.}
 %\cvlistitem{Strong organization, prioritization and time management skills}
 %\cvlistitem{Exceptional multi tasking abilities.}
- 
+\address{Return address}
+
 \section{Education}
 %\cventry{years}{degree/job title}{institution/employeer}{*localization}{*grade}{*desc}
 \cventry{09.2011--06.2014}{M.S}{School Counseling}{Portland State University - Oregon}{}{}{}
 \cventry{06.2006--04.2008}{M.A}{Counseling Psychology}{Maharaja Sayajirao University}{Baroda, India}{}{}{}
 \cventry{06.2003--04.2006}{B.A}{Psychology}{Gujarat University - India}{}{}{}  % arguments 3 to 6 are optional
-\section{Thesis, Seminars, and Surveys}
+\section{Academic Research}
 \subsection{Master Thesis}
-\cvline{PSU, US}{\emph{To study the effects of career exploration interventions on Hispanic (Latina) students' academic goals and post-secondary planning}}
-\cvline{MSU, India}{\emph{To study the attitudes of students towards public display of affection}}
+\cvline{PSU, US}{\emph{To study the effect of career exploration interventions on Hispanic (Latina) students' \mbox{academic} goals and post-secondary planning\footnotemark[1]}}
+\cvline{MSU, India}{\emph{To study attitudes of students towards public display of affection}}
 \subsection{Seminar}
-\cvline{PSU, US}{\emph{Individuals with exceptional abilities}}
-\cvline{MSU, India}{\emph{Psychosocial care for disaster survivors: Communal Riots --- a casestudy}}
-\subsection{Survey \& Data Collection}
-\cvline{IRMA, India}{\emph{Present condition of dairy activities in Narmada district of Gujarat, India}}
-\cvline{Eklavya, India}{Socio-economic survey in villages Adariyana and Zadiyana of Surendranagar district.% The work involved creating the questionnaire, briefing the students and guiding them in conducting the survey
-}
+\cvline{PSU, US}{\emph{Individuals with exceptional abilities\footnotemark[1]}}
+\cvline{MSU, India}{\emph{Psychosocial care for disaster survivors: Communal Riots --- a casestudy\footnotemark[1]}}
+\footnotetext[1]{Materials available on request}
+\section{Multilingual}
+\cvitem{}{\textbf{Fluent:} English (C2), Hindi (C2), Gujarati (C2), \textbf{Beginning:} German (A1)\footnotemark[2]}
+\footnotetext[2]{Enrolled in A1.1}
+%{Beginner: Spanish, German}{}{}{}
+%\subsection{Survey \& Data Collection}
+%\cvline{IRMA, India}{\emph{Present condition of dairy activities in Narmada district of Gujarat, India}}
+%\cvline{Eklavya, India}{Socio-economic survey in villages Adariyana and Zadiyana of Surendranagar district.% The work involved creating the questionnaire, briefing the students and guiding them in conducting the survey
+%}
+%\cventry{2015}{CGCP}{Model Comprehensive Guidance \& Counseling Program for middle school as per ASCA guidelines }{}{}{}{}
 \section{Experience}
-\subsection{Counseling Experience}
-\smallskip
-\cventry{06.2015--06.2016}{Counselor \& Volunteer}{Old Mill Center for Children and Families}{Oregon, US}{}{}
-\cvlistitem{Co-counselor for parent support group (0--6 years) under Oregon's healthy families program.\\
-My duties were to create a supportive environment for parents struggling with social isolation, financial stress, mental health issues, drug and alcohol use, domestic violence and other stressors}
-\cvlistitem{As a team, organized and facilitated Theraputic Summer Camp for the clients (3-16 years old) of the Outpatient Clinic}
-\cvlistitem{Researched on Outcome Measurements in the counseling practice}
-\cvlistitem{The social background included single parent households, migrant and unstable families, including families with members in jail}
-
+\subsection{School Counseling}
 \cventry{08.2014--04.2015}{Professional School Counselor}{Richmond and Washington Elementary Schools, Salem Keizer School District}{Oregon, US}{}{}
-\cvlistitem{Provided social, emotional, academic and career counseling for students from two \textbf{Title I} schools (Schools with more than 70\% of students      below poverty line), and connecting families with community resources}
-\cvlistitem{The social background included single parent households, migrant and unstable families, including families with members in jail}
+\cvlistitem{Provided social, emotional, academic and career counseling for students from two \textbf{Title I} schools (Schools with more than 70\% of students below poverty line), and connecting families with community resources.}
+%\cvlistitem{The social background included single parent households, migrant and unstable families, including families with members in jail}
+\cventry{08.2013--06.2014}{School Counseling Intern (K-8 grade levels)}{Beaverton School District}{Oregon, US}{}{}
+%\cvlistitem{Career awareness and post-secondary planning for Latina students}
+\cvlistitem{Interventions on issues such as bullying, diversity inclusion, transition, identity and race, friendship, social skills, and peer conflicts.}
+\cvlistitem{Initiated the development of an after-school \emph{Student Support Club} for students identifying themselves as a sexual minority.}
+\cvlistitem{Provided classroom guidance lessons based on needs assessment.}
+%\cventry{08.2013--06.2014}{School Counseling Intern, Cedar Mill Elementary School (K-5 grade levels)}
+%{Beaverton School District}{Oregon, US}{}{}
 
-\cventry{04.2013--03.2014}{Clinical Mental Health Experience}{PSU Community Counseling Clinic}{Oregon, US}{}{}
-\cvlistitem{Counseling and case management for anxiety, depression, trauma, self-image, divorce, self-care plan and co-parenting}
-\cvlistitem{Techniques: Cognitive
-Behavioral Technique (CBT), Emotion Focused Therapy (EFT), Mindfulness, Motivational Interviewing, Solution-Focused Brief Therapy, Sand-Tray}
-\cvlistitem{Clients: Individuals, couples and family}
-
-\cventry{10.2013--06.2014}{School Counseling Intern, Cedar Park Middle School (6-8 grade levels)}{Beaverton School District, 2 days/week}{Oregon, US}{}{}
-\cvlistitem{Career awareness and post-secondary planning for Latina students}
-\cvlistitem{Interventions on issues such as bullying, diversity inclusion, transition, identity and race, friendship, social skills, and peer conflicts}
-\cvlistitem{Initiated the development of after-school Student Support Club for students identifying themselves as a sexual minority}
-
-\cventry{08.2013--06.2014}{School Counseling Intern, Cedar Mill Elementary School (K-5 grade levels)}
-{Beaverton School District, 1 day/week}{Oregon, US}{}{}
-\cvlistitem{Classroom guidance lessons based on needs assessment}
-\cvlistitem{Other duties included lunch groups; attending 504, IEP and RTI meetings}
-
-\cventry{05.2008--12.2008}{Counselor Intern, Tangram}{www.tangramhr.com}{India}{}{}
-\cvlistitem{Conducted seminars on personality development, stress and time management, and effective study habits}
-\cvlistitem{Office Administration, Aptitude and personality tests, projective techniques, learning disability screening,}
-\cvlistitem{Seminar on personality development, effective study habits, stress and time management for
-school students and their parents}
-\cvlistitem{Play therapy for children with mild problems like separation anxiety, sibling rivalry, un-congenial home environment etc.}
+%\cvlistitem{Other duties included lunch groups; attending 504, IEP and RTI meetings}
+\subsection{Mental Health Counseling}
+\smallskip
+\cventry{06.2015--08.2016}{Counselor \& Volunteer}{Old Mill Center for Children and Families}{Oregon, US}{}{}
+\cvlistitem{Co-counselor for parent support group (0--6 years) under Oregon's healthy families program.
+\begin{itemize}
+\item[-] Created a supportive environment for parents struggling with social isolation, financial stress, mental health issues, drug and alcohol use, domestic violence and other stressors.
+\end{itemize}}
+\cvlistitem{Helped to organize a \emph{Theraputic Summer Camp} for the clients (3-16 years old) of the \emph{Outpatient Clinic}.}
+\cvlistitem{Researched \emph{Outcome Measurements} in the counseling practice.}
+%\cvlistitem{The social background included single parent households, migrant and unstable families, including families with members in jail}
+\cventry{04.2013--03.2014}{Clinical Mental Health Trainee}{PSU Community Counseling Clinic}{Oregon, US}{}{}
+\cvlistitem{Provided counseling and case management for anxiety, depression, trauma, self-image, divorce, self-care plan and co-parenting.}
+\cvlistitem{Techniques: \emph{Cognitive
+Behavioral Technique} (CBT), \emph{Emotion Focused Therapy} (EFT), \emph{Mindfulness}, \emph{Motivational Interviewing}, \emph{Solution-Focused Brief Therapy}, and \emph{Sand-Tray}}
+%\cvlistitem{Clients: Individuals and couples}
+\cventry{05.2008--12.2008}{Counselor in Training, Tangram}{www.tangramhr.com}{India}{}{}
+\cvlistitem{Conducted seminars on \emph{Personality Development}, \emph{Stress and Time Management}, and \emph{Effective Study Habits}.}
+%\cvlistitem{Performed aptitude and personality tests, projective techniques, and learning disability screening}
+%\cvlistitem{Seminar on personality development, effective study habits, stress and time management for
+%school students and their parents}
+%
 
 \cventry{12.2006--11.2007}{Counselor Intern, Community Counseling Center}{MS University}{India}{}{}
-\cvlistitem{Counseling and case management for anxiety and depression}
+\cvlistitem{Provided counseling and case management for clients with anxiety and depression.}
+\cvlistitem{Performed psychological testing such as intelligence tests, personality tests, aptitude tests as well as projective tests for clients.}
+\cvlistitem{Provided \emph{Play therapy} for children.} % with mild problems like separation anxiety, sibling rivalry, uncongenial home environment etc.
+
+
 \smallskip
 
 \subsection{Teaching Experience}
 \smallskip
-\cventry{01.2009--04.2011}{\textbf{High School Teacher}}{Eklavya School - \httplink{www.eklavya.org}}{Ahmedabad, India}{}{}
-\cvlistitem{Taught Psychology in grade 11 and 12 (two years)}
-\cvlistitem{Taught History in grade 9 (one year)}
-\cvlistitem{Individual and group counseling to students with mild adjustment and learning problems}
-\cvlistitem{Administration and interpretation of aptitude test and career guidance}
-\cvlistitem{Organization of several seminars, competitions and events}
-\cvlistitem{Organization of field visits, survey and nature camps.}
+\cventry{01.2009--04.2011}{\textbf{High School Psychology Teacher}}{Eklavya School - \httplink{www.eklavya.org}}{Ahmedabad, India}{}{}
+%\cvlistitem{Taught Psychology in grade 11 and 12 (two years)}
+%\cvlistitem{Taught History in grade 9 (one year)}
+%\cvlistitem{Individual and group counseling to students with mild adjustment and learning problems}
+\cvlistitem{Teaching, administration and interpretation of aptitude test and career guidance for students}
+%\cvlistitem{Organization of several seminars, competitions and events}
+%\cvlistitem{Organization of field visits, survey and nature camps.}
 \smallskip
-\subsection{Student Teaching Experience}
-\smallskip
-%\newpage
-\cventry{10.2011--08.2012}{Teacher Aide}{Helen Gordon Child Development Center, Portland} {}{}{}
-\cvlistitem{Infant-toddler section with an emphasis on Reggio Emilia approach}
-\cventry{10.2011--03.2012}{Student Teacher}{Beverly Cleary, Portland Public School, Portland}{}{}{}
-\cvlistitem{Taught a class of 30 students in grade 4 as a standard student teacher}
-\smallskip
+%\subsection{Student Teaching Experience}
+%\smallskip
+%\cventry{10.2011--08.2012}{Teacher Aide}{Helen Gordon Child Development Center, Portland} {}{}{}
+%\cvlistitem{Infant-toddler section with an emphasis on Reggio Emilia approach}
+%\cventry{10.2011--03.2012}{Student Teacher}{Beverly Cleary, Portland Public School, Portland}{}{}{}
+%\cvlistitem{Taught a class of 30 students in grade 4 as a standard student teacher}
+%\smallskip
 \subsection{Mentoring experience}
 \smallskip
-\cventry{09.2012–06.2014}{Graduate Mentor for General Ed. Sophomore level regular and online classes}{Uni-
-versity Studies, Portland State University} {}{}{}
-\cvlistitem{Taught research and writing process, shared campus resources, group facilitation, commu-
-nity building, and retention}
-\cventry{01.2013-01.2014}{MAPS Mentor -- Mentors Advocating and Promoting Student Success, University Studies}{Portland State University} {}{}{}
-\cvlistitem{Worked one-on-one with identified at-risk students to prevent college dropout and to
-promote retention, worked as a team to identify retention obstacles for online classes}
+\cventry{09.2012–06.2014}{Graduate Mentor for General Ed. Sophomore level}{University Studies, Portland State University} {}{}{}
+\cvlistitem{Taught research and writing process, shared campus resources, group facilitation, community building, and retention}
+%\cventry{01.2013-01.2014}{MAPS Mentor -- Mentors Advocating and Promoting Student Success, University Studies}{Portland State University} {}{}{}
+%\cvlistitem{Worked one-on-one with identified at-risk students to prevent college dropout and to
+%promote retention, worked as a team to identify retention obstacles for online classes}
 
-\cventry{07.2012-12.2013}{International Student Peer Mentor}{Portland State University} {}{}{}
-\cvlistitem{Mentoring international students during their initial school term for smooth transition in United States}
+%\cventry{07.2012-12.2013}{International Student Peer Mentor}{Portland State University} {}{}{}
+%\cvlistitem{Mentoring international students during their initial school term for smooth transition in United States}
 
-\section{Multilingual}
-\cventry{}{Fluent:}{English, Hindi, Gujarati}{Beginer: Spanish, German}{}{}{}
 
-\section{Affiliations}
-\cventry{}{Member}{Pi Sigma Upsilon chapter of Chi Sigma Iota [CSI]}{Portland State University}{}{}{}
-\cventry{}{Member}{American Counseling Association, ACA}{}{}{}{}
-\cventry{}{Member}{Oregon School Counseling Association, OSCA}{}{}{}{}
+
+%\section{Affiliations}
+%\cventry{}{Member}{Pi Sigma Upsilon chapter of Chi Sigma Iota [CSI]}{Portland State University}{}{}{}
+%\cventry{}{Member}{American Counseling Association, ACA}{}{}{}{}
+%\cventry{}{Member}{Oregon School Counseling Association, OSCA}{}{}{}{}
+
+\section{Awards \& Endowments}
+\cventry{2014}{David Capuzzi Outstanding Scholar Program Endowment}{}{Portland State University}{}{}{}
+\cventry{2010}{Best Educator of the year in High School}{}{Eklavya School}{}{}{}
+
+\section{Licenses \& Certified Courses}
+\smallskip
+\cventry{2014}{Initial 1 School Counselor}{TSPC License, Oregon, US}{(valid till 01-2018)}{}{}{}
+\cventry{2014}{MANDT}{Preventing workplace and relational violence}{}{}{}{}
+\cventry{2013}{MI}{Motivational Interviewing in Schools}{}{}{}{}
+\cventry{2013}{ASSIST}{Applied Suicide Intervention Skills Training}{}{}{}{}
+\cventry{2012}{CampVictory}{Training surrounding issues of child sexual abuse}{}{}{}{}
+%\cventry{2009}{Basic Counseling Skills}{Workshop at Tangram}{}{}{}{}
+%\cventry{2007}{Yoga Training}{at MS University}{}{}{}{}
+%\cventry{2008}{Effective Communication}{}{}{}{}
+%\cventry{2008}{Multiple Intelligence}{}{}{}{}
+%\cventry{2008}{Use of Flash Cards}{}{}{}{}
 
 \section{Community \& Volunteer Work}
 \smallskip
-\cventry{}{Equal Opportunity}{Saarland University, Saarbr\"ucken}{}{}{}{}
-\cventry{}{Oregon Food Bank}{(Volunteer) with Khiwanis club}{}{}{}{}
-\cventry{}{IRCO}{Immigrant and Refugee Community Organization - in home tutor}{}{}{}{}
-\cventry{}{World Mental Health Week}{Creating awareness about mental health}{}{}{}{}
-\cventry{}{National Social Service, India}{Representative from St. Xavier’s College, Gujarat, for three years}{}{}{}{}
-\cventry{}{Youth Hostel Association, India}{Camp leader, Ahmedabad main unit.}{}{}{}{}
-\cventry{}{NGO \emph{TARUMITRA}, working for the environment}{}{}{}{}
-
-
-\section{Certified Courses \& Projects}
-\cventry{}{David Capuzzi Outstanding Scholar Program Endowment}{2014}{Portland State University, US}{}{}{}
-\cventry{}{Best Educator in High School}{2010-2009}{Eklavya School, India}{}{}{}
-
-\section{Certified Courses, Projects \& Workshops}
-\smallskip
-\cventry{}{MANDT}{Preventing workplace and relational violence}{}{}{}{}
-\cventry{2014}{MI}{Motivational Interviewing in Schools}{}{}{}{}
-\cventry{2014}{ASSIST}{Applied Suicide Intervention Skills Training}{}{}{}{}
-\cventry{2014}{CampVictory}{Training surrounding issues of child sexual abuse}{}{}{}{}
-\cventry{2015}{CGCP}{Model Comprehensive Guidance \& Counseling Program for middle school as per ASCA guidelines }{}{}{}{}
-\cventry{2009}{Basic Counseling Skills}{Workshop at Tangram}{}{}{}{}
-\cventry{2007}{Yoga Training}{at MS University}{}{}{}{}
-\cventry{2008}{Effective Communication}{}{}{}{}
-\cventry{2008}{Multiple Intelligence}{}{}{}{}
-\cventry{2008}{Use of Flash Cards}{}{}{}{}
+\cventry{}{Untereinheit der Stabsstelle Chancengleichheit, Saarland University}{Volunteer with audit familiengerechte hochschule}{}{}{}{}
+%\cventry{}{Oregon Food Bank}{with Khiwanis club}{}{}{}{}
+\cventry{}{Immigrant and Refugee Community Organization (IRCO), US}{In home tutor}{}{}{}{}
+%\cventry{}{World Mental Health Week, India}{Creating awareness about mental health}{}{}{}{}
+%\cventry{}{National Social Service, India}{Representative from St. Xavier’s College, Gujarat, for three years}{}{}{}{}
+%\cventry{}{Youth Hostel Association, India}{Camp leader, Ahmedabad main unit.}{}{}{}{}
+\cventry{}{Tarumitra (NGO), India}{Working for the environment}{}{}{}
+\section{References}
+\cventry{}{Dr. Prof. Lisa Aasheim}{Coordinator, School Counseling Program, Clinic Director, Counselor Education, Portland State University}{{\href{mailto:aasheim@pdx.edu}{\mbox{aasheim@pdx.edu}}}}{\mbox{+1-503-725-4253}}{}
+\cventry{}{Dr. Prof. Rashmin Sompura}{Assistant Professor, Maharaja Sayajirao
+University}{\href{mailto:rashmin@satyam.net.in}{\mbox{sompura.rashmin@gmail.com}}}{\mbox{+91-95375-10055}}{}{}
+%\blfootnote{Address: Dhara Sheth, Martin-Luther Stra{\ss}e 1, Saarbr\"ucken, 66111}
 \end{document}
